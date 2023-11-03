@@ -1,0 +1,247 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern JetBrains Mono;}{\f2\fmodern\fprq1 Lucida Console;}{\f3\fmodern\fprq1\fcharset0 Lucida Console;}{\f4\fnil\fcharset238 Calibri;}{\f5\fnil\fcharset238 Arial;}{\f6\fmodern\fcharset0 JetBrains Mono;}}
+{\colortbl ;\red169\green183\blue198;\red0\green0\blue255;\red136\green136\blue198;\red106\green135\blue89;\red204\green120\blue50;\red104\green151\blue187;\red128\green128\blue128;\red178\green0\blue178;\red148\green85\blue141;\red255\green198\blue109;\red187\green181\blue41;\red114\green115\blue122;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\f0\fs22\lang9 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\line\cf0\f0\fs22 --- GITHUB ---\par
+\par
+\f2\fs18 git init\f3\lang1033  - initializeaza folderul git pt ca projectul sa poata folosi git commands\par
+git clone (URL) - cloneaza un repo de pe github\f2\lang9\par
+git status\par
+git add .\par
+git commit -m "commit1"\par
+\f3\lang1033 Connect repo - \f2 git remote add origin {{\field{\*\fldinst{HYPERLINK https://github.com/BogdanSB94/MyProject.git }}{\fldrslt{https://github.com/BogdanSB94/MyProject.git\ul0\cf0}}}}\f2\fs18\par
+\f3 (ne conectam cu repository din cloud in fisierul local)\f2\par
+\f3 Push files - \f2 git push -u origin main\par
+\f3 ls - changing folders in git\par
+git branch - verificam pe ce ramura suntem\par
+git checkout - schimbam pe ce ramura suntem\par
+git checkout -b " " - creem o ramura noua\par
+git pull origin main - face un pull de pe server cu toate info actualizate( din  main) \par
+git merge "nume branch" - da merge la branchurile externe in main (daca dam merge din main )\par
+git diff - diferenta dintre fisierele de pe repo si local\par
+git fetch - aduce la zi info din remote (metadata) (branchuri facute de altii de ex) \par
+touch (nume fisier) - creem un fisier nou\par
+touch readme.md - create readme  file\f2\par
+
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 -------------------------------------------------------------------------------------------------------------------\par
+pip install - instaleaza librari\par
+pip freeze > (nume fisier) - pune toate librariile care le ai in python intr-un fisier\par
+pip install -r (nume fisier) - instaleaza toate librariile dintr-un fisier cu librarii (pip freeze)\par
+-------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\line\cf0\f0\fs22\par
+Variabile = 4 tipuri - string/index/float/bool\par
+string = "STR"\par
+index = 23\par
+float = 23.5\par
+bool = true/false\par
+\\n = new line of code\par
+comanda .strip - elimina caractere nedorite precum /n dintr-un fisier text\par
+""""  - 3 ghilimele la functii si enter creeaza o documentatie a functiei automat\par
+-------------------------------------------------------------------------------------------------------------------\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20 string = \cf3 input\cf1 (\cf4 "string de dimensiune impara: "\cf1 )\line\line\cf5 if \cf3 len\cf1 (string) % \cf6 2 \cf1 == \cf6 1\cf1 :\line     index_mijloc = \cf3 round\cf1 (\cf3 len\cf1 (string) / \cf6 2\cf1 ) - \cf6 1\line     \cf3 print\cf1 (string[index_mijloc])\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+12. Folosind o singur\f4\'e3 linie de cod :\par
+cite\u537?te un string de la tastatur\'e3 (ex: 'alabala portocala');\par
+salveaz\'e3 fiecare cuv\f0\'e2nt \'eentr-o variabil\f4\'e3;\par
+printeaz\'e3 ambele variabile pentru verificare.\par
+\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20 string = \cf3 input\cf1 (\cf4 ":"\cf1 )\line word_list = string.split(\cf4 " "\cf1 )\line\cf3 print\cf1 (word_list)\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+% - este restul impartirii (modulo)\par
+x =  5 % 2 = 1\par
+\par
+-------------------------------------------------------------------------------------------------------------------\par
+comparare un numar din lista cu toate numerele si defineste cel mai mare\par
+max_number = 0\par
+numbers = [21, 23, 121, 32, 43]\par
+\par
+for number in numbers:\par
+    if number > max_number:\par
+        max_number = number\par
+\par
+print(max_number)\par
+-------------------------------------------------------------------------------------------------------------------\par
+\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf7\f1\fs20 # 14.Exerci\f5\u539?\f1 iu:\line # cite\f5\u537?\f1 te un user de la tastatur\f5\'e3\f1 ;\line # cite\f5\u537?\f1 te o parol\f5\'e3\f1 ;\line # afi\f5\u537?\f1 eaz\f5\'e3\f1 : 'Parola pt user x este ***** \f5\u537?\f1 i are x caractere';\line # ***** se va calcula dinamic, indiferent de dimensiunea parolei, trebuie s\f5\'e3\f1  afi\f5\u537?\f1 eze corect.\line\line\line\cf1 user = \cf3 input\cf1 (\cf4 "user: "\cf1 )\line parola = \cf3 input\cf1 (\cf4 "parola: "\cf1 )\line length = \cf3 len\cf1 (parola)\line\line\cf3 print\cf1 (\cf4 f"userul \cf5\{\cf1 user\cf5\}\cf4  are parola \cf5\{\cf1 length * \cf4 '*'\cf5\}\cf4 "\cf1 )\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1\f1\fs20\par
+\par
+litera = \cf3 input\cf1 (\cf4 "Introduceti o litera: "\cf1 )\line\line vocale = \cf4 "aeiou"\line\line\cf5 if \cf1 litera \cf5 in \cf1 vocale:\line     \cf3 print\cf1 (\cf4 "Este vocala"\cf1 )\line\cf5 else\cf1 :\line     \cf3 print\cf1 (\cf4 "Este consoana"\cf1 )\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1 -----Caracter din mijloc-----\cf1\f1\fs20\par
+\par
+string = \cf3 input\cf1 (\cf4 "Enter a string: "\cf1 )\line\line middle_index = \cf3 len\cf1 (string) // \cf6 2\line\line\cf3 print\cf1 (\cf4 f"Middle character is: \cf5\{\cf1 string[middle_index]\cf5\}\cf4 "\cf1 )\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+-Imparte 2 cuvinte in 2 variabile diferite-\par
+\cf1\f1\fs20 string = \cf3 input\cf1 (\cf4 "Enter 2 words: "\cf1 )\line\line cuvinte = string.split()\line\line\line\cf5 if \cf3 len\cf1 (cuvinte) == \cf6 2\cf1 :\line     cuvant1 = cuvinte[\cf6 0\cf1 ]\line     cuvant2 = cuvinte[\cf6 1\cf1 ]\line     \cf3 print\cf1 (cuvant1)\line     \cf3 print\cf1 (cuvant2)\line\cf5 else\cf1 :\line     \cf3 print\cf1 (\cf4 "Please enter 2 words only"\cf1 )\line\line\line\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\par
+\cf0\f0\fs22 - liste simplu inlantuite - liste dublu inlantuite\par
+\par
+-------------------------------------------------------------------------------------------------------------------\par
+----- print de la primul index pana la al 3-lea din 2 in 2\par
+\cf1\f1\fs20 lista = [\cf6 1\cf5 , \cf6 2\cf5 , \cf4 "asd"\cf5 , True, \cf6 5\cf5 , \cf6 8\cf1 ]\line\line\cf3 print\cf1 (lista[\cf6 0\cf1 :\cf6 3\cf1 :\cf6 2\cf1 ])\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+- Dictionar - \{\}\par
+\par
+\cf1\f1\fs20 mydict = \{\line     \cf4 "23" \cf1 : \cf6 34\cf5 ,\line     \cf4 "asd" \cf1 : \cf4 "dsa"\line\cf1\}\line\line\cf3 print\cf1 (mydict.keys())\line\cf3 print\cf1 (mydict.values())\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\par
+\cf0\f0\fs22 -Matrice = lista in lista / dictionar in lista / lista in dictionar etc\cf1\f1\fs20\par
+\par
+\line matrice = [\line     [\cf6 1\cf5 , \cf6 2\cf5 , \cf6 3\cf1 ]\cf5 ,\line     \cf1 [\cf6 4\cf5 , \cf6 5\cf5 , \cf6 6\cf1 ]\cf5 ,\line     \cf1\{\cf4 "1" \cf1 : \cf6 2\cf5 , \cf4 "3" \cf1 : \cf6 4\cf1\}\cf5 ,\line     \cf4 "23456"\line\cf1 ]\line\line\cf3 print\cf1 (matrice[\cf6 2\cf1 ][\cf4 "3"\cf1 ])\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+Seturi\par
+Seturile nu au index\cf1\f1\fs20\par
+\cf0\f0\fs22 ----- intersectia ---- ce se suprapune din ambele liste\par
+-----diferenta----- prima lista minus a doua lista \par
+-----union----- primul set plus al doilea set\cf1\f1\fs20\par
+\cf7 #seturi\line\line\cf1 ss = \{\cf6 1\cf5 , \cf6 2\cf5 , \cf6 3\cf5 , \cf6 3\cf5 , \cf6 3\cf1\}\line ff = \{\cf6 3\cf5 , \cf6 4\cf5 , \cf6 5\cf1\}\line\line\cf3 print\cf1 (ss.intersection(ff))\line\line\cf3 print\cf1 (ss.difference(ff))\par
+\par
+\cf0\f0\fs22 Din lista se poate face cast la set - set(lista) pentru a folosii intersectia si diferenta\cf1\f1\fs20\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\cf1\f1\fs20\par
+\cf7 #tupple\line\line # Tupple sunt ordonate si indexate\line # Tupple nu se mai poate modifica, este constant\par
+\par
+\cf1\f6\lang1033 Tupple = (\cf4 "123"\cf5 , \cf4 "asd"\cf5 , \cf4 "zxc"\cf1 )\par
+\par
+\cf7 #Lista se poate transforma in set cu --- set()\line #Setul se poate transforma in lista cu --- list()\par
+#Daca setul se transforma in lista nu se iau toate elementele din set, doar cele care nu sunt duplicate\par
+\cf0\f0\fs22\lang9 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\lang1033\par
+\cf0\fs24 Lists\f0     //\f1\tab Tuples\f0    //\f1\tab Sets\tab\f0  //  \f1 Dictionaries\par
+A list is a collection of ordered data.\par
+\par
+A tuple is an ordered collection of data.\par
+\par
+A set is an unordered collection.\par
+A dictionary is an unordered collection of data that stores data in key-value pairs.\par
+\f0\fs22\lang9 -------------------------------------------------------------------------------------------------------------------\par
+- For loop - \cf1\f1\fs20\lang1033\par
+\par
+ss = [\cf6 1\cf5 , \cf6 2\cf5 , \cf6 3\cf5 , \cf6 3\cf5 , \cf6 3\cf1 ]\line\line count = \cf6 0\line\line\cf5 for \cf1 element \cf5 in \cf1 ss:\line     \cf5 if \cf1 element == \cf6 3\cf1 :\line         \cf3 print\cf1 (\cf4 "L am gasit pe 3"\cf1 )\line         count = count + \cf6 1\line\line\cf7 # IF-ul se repeta de 3 ori si de fiecare data se adauga 1 pentru ca exista 3 de "3" in lista\line\line\cf3 print\cf1 (\cf4 f"L am gasit pe 3 de \cf5\{\cf1 count\cf5\}\cf4  ori"\cf1 )\par
+\par
+\cf0\f0\fs22\lang9 -------------------------------------------------------------------------------------------------------------------\par
+\par
+\cf1\f1\fs20\line\line string = \cf3 input\cf1 (\cf4 "Enter a string: "\cf1 )\line\line\cf5 if \cf3 len\cf1 (string) >= \cf6 2\cf1 :\line\line     first_char = string[\cf6 0\cf1 ]\line     rest_of_string = string[\cf6 1\cf1 :-\cf6 1\cf1 ]\line\line\line     result = first_char + rest_of_string.replace(first_char\cf5 , \cf1 first_char.upper()) + string[-\cf6 1\cf1 ]\line     \cf3 print\cf1 (result)\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf7\f1\fs20\par
+\cf1 l1 = [\cf6 3\cf5 , \cf6 1\cf5 , \cf6 0\cf5 , \cf6 2\cf1 ]\line\line\line\cf7 # muta 0 la inceputul listei\line # se face cu for\par
+\cf1\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\par
+\par
+\cf7 #\line # 12. Ne imagin\f5\'e3\f1 m o echip\f5\'e3\f1  de fotbal pt teren sintetic.\line # 3 Schimb\f5\'e3\f1 ri maxime admise:\line #\line # Declar\f5\'e3\f1  o List\f5\'e3\f1  cu 5 juc\f5\'e3\f1 tori\line # Schimbari_efectuate = te joci tu cu valori diferite\line # Schimbari_max = 3\line #\line # Dac\f5\'e3\f1  Juc\f5\'e3\f1 torul x e \f0\'ee\f1 n teren \f5\u537?\f1 i mai avem schimb\f5\'e3\f1 ri la dispozi\f5\u539?\f1 ie\line # Efectueaz\f5\'e3\f1  schimbarea\line # \f5\u536?\f1 terge juc\f5\'e3\f1 torul scos din list\f5\'e3\f1\line # Adaug\f5\'e3\f1  juc\f5\'e3\f1 torul intrat\line # Afi\f5\u537?\f1 az\f5\'e3\f1  a intrat x, a ie\f5\u537?\f1 it y, mai ai z schimb\f5\'e3\f1 ri\line #\line # Dac\f5\'e3\f1  juc\f5\'e3\f1 torul nu e \f0\'ee\f1 n teren:\line # Afi\f5\u537?\f1 az\f5\'e3\f1  \lquote nu se poate efectua schimbarea deoarece juc\f5\'e3\f1 torul x nu e \f0\'ee\f1 n teren\rquote\line # Afi\f5\u537?\f1 az\f5\'e3\f1  \lquote mai ai z schimb\f5\'e3\f1 ri\rquote\line #\line # Testeaz\f5\'e3\f1  codul cu diferite valori\line #\line # Google search hint\line # \ldblquote how to check if item is \f0\'ee\f1 n list python\rdblquote\line\line\line\cf1 jucatori = [\cf4 "Hagi"\cf5 , \cf4 "Mutu"\cf5 , \cf4 "Becali"\cf5 , \cf4 "Messi"\cf5 , \cf4 "Ronaldo"\cf1 ]\line\line play = \cf5 True\line\line\cf1 schimbari_efectuate = \cf6 0\line\cf1 schimbari_max = \cf6 3\line\line\cf5 while \cf1 play == \cf5 True\cf1 :\line     jucator_scos = \cf3 input\cf1 (\cf4 "Scoate un jucator: "\cf1 )\line     jucator_nou = \cf3 input\cf1 (\cf4 "Introdu un jucator: "\cf1 )\line     \cf5 if not \cf1 jucator_scos \cf5 or not \cf1 jucator_nou:\line         \cf3 print\cf1 (\cf4 "Nu ai introdus un jucator"\cf1 )\line         raspuns = \cf3 input\cf1 (\cf4 "Mai vrei sa joci ? Da/Nu: "\cf1 )\line         \cf5 if \cf1 raspuns.lower() == \cf4 "da"\cf1 :\line             \cf5 continue\line         else\cf1 :\line             \cf5 break\line\line\line\line     if \cf1 schimbari_max < \cf6 1\cf1 :\line         \cf3 print\cf1 (\cf4 "Nu mai ai schimbari"\cf1 )\line\line     \cf5 if \cf1 jucator_scos \cf5 not in \cf1 jucatori \cf5 and \cf1 schimbari_max > \cf6 0\cf1 :\line         \cf3 print\cf1 (\cf4 "Jucatorul nu este in echipa"\cf1 )\line\line     \cf5 for \cf1 jucator \cf5 in \cf1 jucatori:\line         \cf5 if \cf1 jucator_scos \cf5 in \cf1 jucator \cf5 and \cf1 schimbari_max > \cf6 0\cf1 :\line             jucatori.remove(jucator_scos)\line             jucatori.append(jucator_nou)\line             schimbari_max = schimbari_max - \cf6 1\line             \cf3 print\cf1 (\cf4 f"A intrat \cf5\{\cf1 jucator_nou\cf5\}\cf4 , a iesit \cf5\{\cf1 jucator_scos\cf5\}\cf4 , mai ai \cf5\{\cf1 schimbari_max\cf5\}\cf4  schimbari"\cf1 )\line\line\line\line     \cf3 print\cf1 (\cf4 "Echipa este"\cf5 , \cf1 jucatori)\line\par
+\line\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\par
+\par
+fructe = \{\line     \cf4 "Mere"\cf1 : \cf6 3\cf5 ,\line     \cf4 "Pere"\cf1 : \cf6 3\cf5 ,\line     \cf4 "Piersici"\cf1 : \cf6 4\cf5 ,\line     \cf4 "Caise"\cf1 : \cf6 5\line\cf1\}\line\line numar_necesar = \cf6 3\line\cf1 fructe_ramase = \{\}\line\line\line\cf5 for \cf1 fruct\cf5 , \cf1 count \cf5 in \cf1 fructe.items():\line     \cf5 if \cf1 count > \cf6 3\cf1 :\line         fructe_ramase[fruct] = count - numar_necesar\line\line\line\cf5 for \cf1 fruct\cf5 , \cf1 fructe_scoase \cf5 in \cf1 fructe_ramase.items():\line     \cf3 print\cf1 (\cf4 f"Trebuie scoase \cf5\{\cf1 fructe_scoase\cf5\}\cf4  din categoria \cf5\{\cf1 fruct\cf5\}\cf4  pentru a ramane \cf5\{\cf1 numar_necesar\cf5\}\cf4 "\cf1 )\par
+\line\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\par
+\cf0\f0\fs22 Pentru a modifica o lista cu ajutorul unui for trebuie sa modifcam indexul listei cu \par
+for key, item in enumerate(lista):\par
+-------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\par
+\par
+\line alte_numere = [-\cf6 5\cf5 , \cf6 7\cf5 , \cf6 2\cf5 , \cf6 9\cf5 , \cf6 12\cf5 , \cf6 3\cf5 , \cf6 1\cf5 , \cf1 -\cf6 6\cf5 , \cf1 -\cf6 4\cf5 , \cf6 3\cf1 ]\line\line\line\line a = \cf6 1\line\cf1 b = \cf6 2\line\cf1 aux = \cf6 0\line\line\cf1 aux = a\line a = b\line b = aux\line\line a\cf5 , \cf1 b = b\cf5 , \cf1 a \cf7 # face schimbarea pe loc pentru ca daca e pe un singur rand calculatorul stie ambele valori\par
+\cf1\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\par
+\par
+\line alte_numere = [-\cf6 5\cf5 , \cf6 7\cf5 , \cf6 2\cf5 , \cf6 9\cf5 , \cf6 12\cf5 , \cf6 3\cf5 , \cf6 1\cf5 , \cf1 -\cf6 6\cf5 , \cf1 -\cf6 4\cf5 , \cf6 3\cf1 ]\line\line aux = \cf6 0\line\line\cf5 for \cf1 i \cf5 in \cf3 range\cf1 (\cf3 len\cf1 (alte_numere)):\line     \cf5 for \cf1 j \cf5 in \cf3 range\cf1 (i+\cf6 1\cf5 , \cf3 len\cf1 (alte_numere)):\line         \cf5 if \cf1 alte_numere[i] > alte_numere[j]:\line             aux = alte_numere[i]\line             alte_numere[i] = alte_numere[j]\line             alte_numere[j] = aux\line\line\line\cf3 print\cf1 (alte_numere)\line\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\par
+\cf5 class \cf1 Om:\line     nume = \cf5 None\line     \cf1 varsta = \cf5 None\line     \cf1 greutate = \cf5 None\line     \cf1 data_nastere = \cf5 None\line\line     def \cf8 __init__\cf1 (\cf9 self\cf5 , \cf1 nume\cf5 , \cf1 varsta\cf5 , \cf1 greutate\cf5 , \cf1 data_nastere):\line\line         \cf9 self\cf1 .nume = nume\line         \cf9 self\cf1 .varsta = varsta\line         \cf9 self\cf1 .greutate = greutate\line         \cf9 self\cf1 .data_nastere = data_nastere\line\line\line     \cf5 def \cf10 print_self\cf1 (\cf9 self\cf1 ):\line         \cf3 print\cf1 (\cf4 "sunt in functia print self \cf5\\n\cf4 "\cf1 )\line         \cf3 print\cf1 (\cf9 self\cf1 .nume\cf5 , \cf9 self\cf1 .data_nastere\cf5 , \cf9 self\cf1 .greutate\cf5 , \cf9 self\cf1 .varsta)\line\line     \cf5 def \cf8 __str__\cf1 (\cf9 self\cf1 ):\line         \cf5 return \cf4 f"\cf5\{\cf9 self\cf1 .nume\cf5\}\cf4 , \cf5\{\cf9 self\cf1 .varsta\cf5\}\cf4 , \cf5\{\cf9 self\cf1 .greutate\cf5\}\cf4 , \cf5\{\cf9 self\cf1 .data_nastere\cf5\}\cf4 "\line\par
+\cf0\f0\fs22 -------\cf4\f1\fs20\par
+\par
+\cf5 from \cf1 datetime \cf5 import \cf1 date\line\cf5 from \cf1 Data \cf5 import \cf1 Om\line\line\line om1 = Om(\cf4 "Daniel"\cf5 , \cf6 0\cf5 , \cf6 3.200\cf5 , \cf1 date.today())\line\line om2 = Om(\cf4 "Rares"\cf5 , \cf6 0\cf5 , \cf6 3.00\cf5 , \cf1 date.today())\line om3 = Om(\cf4 "gina"\cf5 , \cf6 0\cf5 , \cf6 3.00\cf5 , \cf1 date.today())\line om4 = Om(\cf4 "giani"\cf5 , \cf6 0\cf5 , \cf6 3.00\cf5 , \cf1 date.today())\line\line\line maternitate = [om1\cf5 , \cf1 om2\cf5 , \cf1 om3\cf5 , \cf1 om4]\line\line\cf5 for \cf1 om \cf5 in \cf1 maternitate:\line     \cf3 print\cf1 (om)\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+\cf1\f1\fs20\line\cf5 class \cf1 Cerc():\line\line     raza = \cf5 None\line     \cf1 culoare = \cf5 None\line\line     def \cf8 __init__\cf1 (\cf9 self\cf5 , \cf1 raza\cf5 , \cf1 culoare):\line         \cf9 self\cf1 .raza = raza\line         \cf9 self\cf1 .culoare = culoare\line\line     \cf5 def \cf10 descrie_cerc\cf1 (\cf9 self\cf1 ):\line         \cf3 print\cf1 (\cf9 self\cf1 .raza\cf5 , \cf9 self\cf1 .culoare)\line\line     \cf5 def \cf10 aria\cf1 (\cf9 self\cf1 ):\line         area = \cf6 3.14159265359 \cf1 * (\cf9 self\cf1 .raza * \cf9 self\cf1 .raza)\line         \cf5 return \cf1 area\line\line     \cf5 def \cf10 diametru\cf1 (\cf9 self\cf1 ):\line         diameter = \cf9 self\cf1 .raza * \cf6 2\line         \cf5 return \cf1 diameter\line\line     \cf5 def \cf10 circumferinta\cf1 (\cf9 self\cf1 ):\line         circumference = \cf6 2 \cf1 * \cf6 3.14159265359 \cf1 * \cf9 self\cf1 .raza\line         \cf5 return \cf1 circumference\line\line\line\line cerc1 = Cerc(\cf6 23\cf5 , \cf4 "red"\cf1 )\line cerc1.descrie_cerc()\line\cf3 print\cf1 (cerc1.aria())\line\cf3 print\cf1 (cerc1.diametru())\line\cf3 print\cf1 (cerc1.circumferinta())\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+\cf1\f1\fs20\line\cf5 class \cf1 Dreptunghi():\line     lungime = \cf5 None\line     \cf1 latime = \cf5 None\line     \cf1 culoare = \cf5 None\line\line     def \cf8 __init__\cf1 (\cf9 self\cf5 , \cf1 lungime\cf5 , \cf1 latime\cf5 , \cf1 culoare):\line         \cf9 self\cf1 .lungime = lungime\line         \cf9 self\cf1 .latime = latime\line         \cf9 self\cf1 .culoare = culoare\line\line     \cf5 def \cf10 descrie\cf1 (\cf9 self\cf1 ):\line         \cf5 return \cf1 (\cf4 f"\cf5\{\cf9 self\cf1 .lungime\cf5\}\cf4 , \cf5\{\cf9 self\cf1 .latime\cf5\}\cf4 , \cf5\{\cf9 self\cf1 .culoare\cf5\}\cf4 "\cf1 )\line\line     \cf5 def \cf10 aria\cf1 (\cf9 self\cf1 ):\line         area = \cf9 self\cf1 .lungime * \cf9 self\cf1 .latime\line         \cf5 return \cf1 area\line\line     \cf5 def \cf10 perimetru\cf1 (\cf9 self\cf1 ):\line         p = \cf6 2 \cf1 * (\cf9 self\cf1 .latime + \cf9 self\cf1 .lungime)\line         \cf5 return \cf1 p\line\line     \cf5 def \cf10 schimba_culoarea\cf1 (\cf9 self\cf5 , \cf1 culoare):\line         \cf9 self\cf1 .culoare = culoare\line\line\line dreptunghi1 = Dreptunghi(\cf6 23\cf5 , \cf6 45\cf5 , \cf4 "Rosu"\cf1 )\line\line\cf3 print\cf1 (dreptunghi1.descrie())\line\cf3 print\cf1 (dreptunghi1.aria())\line\cf3 print\cf1 (dreptunghi1.perimetru())\line dreptunghi1.schimba_culoarea(\cf4 "Mov"\cf1 )\line\line\cf3 print\cf1 (dreptunghi1.descrie())\line\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+\par
+inputul se ia de la tastatura dupa randul codului, nu se iau prima data inputurile si dupa restul codului\par
+\cf1\f1\fs20\line\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\line\cf0\f0\fs22 --- GITHUB ---\par
+\par
+\f2\fs18 git init\f3\lang1033  - initializeaza folderul git pt ca projectul sa poata folosi git commands\par
+git clone (URL) - cloneaza un repo de pe github\f2\lang9\par
+git status\par
+git add .\par
+git commit -m "commit1"\par
+\f3\lang1033 Connect repo - \f2 git remote add origin {{\field{\*\fldinst{HYPERLINK https://github.com/BogdanSB94/MyProject.git }}{\fldrslt{https://github.com/BogdanSB94/MyProject.git\ul0\cf0}}}}\f2\fs18\par
+\f3 Push files - \f2 git push -u origin main\par
+\f3 ls - changing folders in git\par
+git branch - verificam pe ce ramura suntem\par
+git checkout - schimbam pe ce ramura suntem\par
+git checkout -b " " - creem o ramura noua\par
+git pull origin main - face un pull de pe server cu toate info actualizate( din  main) \par
+git mege "nume branch" - da merge la branchurile externe in main (daca dam merge din main )\f2\par
+\f0\fs22\lang9 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\line\par
+\cf0\f0\fs22 - Abstract method - \par
+\par
+Trebuie importat ABC din abc si abstractmethod\par
+\par
+Clasa abstracta te obliga sa definesti si in clasele care mostenesc clasa de baza functiile care sunt cu @abstractmethod\cf1\f1\fs20\par
+\par
+\cf5 from \cf1 abc \cf5 import \cf1 ABC\cf5 , \cf1 abstractmethod\line\line\cf5 class \cf1 Animal(ABC):\line\line     \cf11 @abstractmethod\line     \cf5 def \cf10 sound\cf1 (\cf9 self\cf1 ):\line         \cf5 pass\line\line class \cf1 Caine(Animal):\line\line     \cf5 def \cf10 sound\cf1 (\cf9 self\cf1 ):\line         \cf3 print\cf1 (\cf4 "woof woof"\cf1 )\line\line     \cf5 def \cf10 jump\cf1 (\cf9 self\cf1 ):\line         \cf3 print\cf1 (\cf4 "jump"\cf1 )\line\line\cf5 class \cf1 Pisica(Animal):\line\line     \cf5 def \cf10 sound\cf1 (\cf9 self\cf1 ):\line         \cf3 print\cf1 (\cf4 "miau miau"\cf1 )\line\line\line caine1 = Caine()\line\line caine1.urla()\line caine1.jump()\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+Import text/json files\par
+r - reads file\par
+r+ - reads and writes file (doesnt replace text in file if writing )\par
+w - writes file\par
+w+ - writes and reads file (truncates file in the beggining )  ( replaces text in file )\par
+a - appends file\par
+a+ - appends and reads file\cf1\f1\fs20\par
+\par
+\cf5 def \cf10 read_file\cf1 (\cf12 file_path\cf1 ):\line     \cf5 with \cf3 open\cf1 (file path\cf5 , \cf4 "r"\cf1 ) \cf5 as \cf1 file:\line         \cf5 return \cf1 file.readlines()\line\line\cf5 def \cf10 write_file\cf1 (file_path\cf5 , \cf1 information):\line     \cf5 with \cf3 open\cf1 (file_path\cf5 , \cf4 "w"\cf1 ) \cf5 as \cf1 file:\line         \cf5 return \cf1 file.writelines(information)\line     \line\cf7 #JSON must have importen - import json\line\line\cf5 def \cf10 read_file_json\cf1 (file_path):\line     \cf5 with \cf3 open\cf1 (file_path\cf5 , \cf4 "r"\cf1 ) \cf5 as \cf1 file:\line         \cf5 return \cf1 json.load(file)\line     \line\cf5 def \cf10 write_file_json\cf1 (file_path\cf5 , \cf1 information):\line     \cf5 with \cf3 open\cf1 (file_path\cf5 , \cf4 "w"\cf1 ) \cf5 as \cf1 file:\line         json.dump(information\cf5 , \cf1 file)\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+OPEN FILES\cf1\f1\fs20\line\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\line\cf5 def \cf10 read_file\cf1 ():\line     \cf5 with \cf3 open\cf1 (\cf4 "hello.txt"\cf5 , \cf4 "r"\cf1 ) \cf5 as \cf1 file:\line         \cf5 return \cf1 file.readlines()\line\line\cf5 def \cf10 append_file\cf1 ():\line     files_to_apped = [\cf4 "GO"\cf5 , \cf4 "Kotlin"\cf5 , \cf4 "Swift"\cf1 ]\line     \cf5 for \cf1 word \cf5 in \cf1 files_to_apped:\line         \cf5 with \cf3 open\cf1 (\cf4 "hello.txt"\cf5 , \cf4 "a"\cf1 ) \cf5 as \cf1 file:\line             file.writelines(\cf4 f"\cf5\{\cf1 word\cf5\}\\n\cf4 "\cf1 )\line\line\cf5 def \cf10 read_odd\cf1 ():\line     \cf5 with \cf3 open\cf1 (\cf4 "hello.txt"\cf5 , \cf4 "r"\cf1 ) \cf5 as \cf1 file:\line         text = file.readlines()\line         \cf5 for \cf1 line \cf5 in \cf1 text[::\cf6 2\cf1 ]:\line             \cf3 print\cf1 (line)\line\line\cf5 def \cf10 write_alfabet\cf1 ():\line     alfabet = \cf4 "abcdefghijklmnopqrstuvwxyz"\line     \cf5 for \cf1 index\cf5 , \cf1 letter \cf5 in \cf3 enumerate\cf1 (alfabet):\line         \cf5 with \cf3 open\cf1 (\cf4 f"\cf5\{\cf1 letter\cf5\}\cf4 "\cf5 , \cf4 "w+"\cf1 ) \cf5 as \cf1 file:\line             \cf5 if \cf1 index == \cf6 0\cf1 :\line                 file.writelines(\cf4 f"My name is letter \cf5\{\cf1 letter.upper()\cf5\}\\n\cf4 "\line                                 f"I am the \cf5\{\cf1 index + \cf6 1\cf5\}\cf4 st letter of the alphabet"\cf1 )\line             \cf5 elif \cf1 index == \cf6 1\cf1 :\line                 file.writelines(\cf4 f"My name is letter \cf5\{\cf1 letter.upper()\cf5\}\\n\cf4 "\line                                 f"I am the \cf5\{\cf1 index + \cf6 1\cf5\}\cf4 nd letter of the alphabet"\cf1 )\line             \cf5 elif \cf1 index == \cf6 2\cf1 :\line                 file.writelines(\cf4 f"My name is letter \cf5\{\cf1 letter.upper()\cf5\}\\n\cf4 "\line                                 f"I am the \cf5\{\cf1 index + \cf6 1\cf5\}\cf4 rd letter of the alphabet"\cf1 )\line             \cf5 else\cf1 :\line                 file.writelines(\cf4 f"My name is letter \cf5\{\cf1 letter.upper()\cf5\}\\n\cf4 "\line                             f"I am the \cf5\{\cf1 index + \cf6 1\cf5\}\cf4 th letter of the alphabet"\cf1 )\line\line\line\line\line text = read_file()\line\line write_file()\line append_file()\line read_odd()\line\line\line\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+ITERATORS - \par
+(reverse)\par
+\cf1\f1\fs20 note = [\cf6 1\cf5 , \cf6 2\cf5 , \cf6 3\cf5 , \cf6 4\cf5 , \cf6 5\cf5 , \cf6 6\cf5 , \cf6 7\cf5 , \cf6 8\cf5 , \cf6 9\cf5 , \cf6 10\cf1 ]\line rev_it = \cf3 iter\cf1 (note[::-\cf6 1\cf1 ])\line\cf3 print\cf1 (\cf3 next\cf1 (rev_it))\line\cf3 print\cf1 (\cf3 next\cf1 (rev_it))\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+GENERATORS - YIELD\cf1\f1\fs20\par
+\par
+\cf5 import \cf1 random\line\line\line\cf5 def \cf10 loto_6_49\cf1 ():\line\line     lottery_numbers = random.sample(\cf3 range\cf1 (\cf6 1\cf5 , \cf6 50\cf1 )\cf5 , \cf6 6\cf1 )\line     \cf5 for \cf1 num \cf5 in \cf1 lottery_numbers:\line         \cf5 yield \cf1 num\line\line\line     noroc = random.randint(\cf6 1000000\cf5 , \cf6 9999999\cf1 )\line     \cf5 yield \cf1 noroc\line\line\line generator = loto_6_49()\line\line\cf3 print\cf1 (\cf4 "Numerele loteriei 6/49:"\cf1 )\line\cf5 for \cf1 i \cf5 in \cf3 range\cf1 (\cf6 6\cf1 ):\line     \cf3 print\cf1 (\cf4 f"Num\f5\'e3\f1 rul \cf5\{\cf1 i + \cf6 1\cf5\}\cf4 : \cf5\{\cf3 next\cf1 (generator)\cf5\}\cf4 "\cf1 )\line\line\cf3 print\cf1 (\cf4 "Num\f5\'e3\f1 rul de noroc:"\cf5 , \cf3 next\cf1 (generator))\par
+\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+CONTEXT MANAGERS (WITH)\cf1\f1\fs20\par
+\par
+file = \cf3 open\cf1 (\cf4 "hello.txt"\cf5 , \cf4 "r"\cf1 )\line\line\cf5 try\cf1 :\line     \cf3 print\cf1 (file.readlines())\line\line\cf5 finally\cf1 :\line     file.close()\line\line\cf5 with \cf3 open\cf1 (\cf4 "hello.txt"\cf5 , \cf4 "r"\cf1 ) \cf5 as \cf1 file:\line     \cf3 print\cf1 (file.readlines())\par
+\par
+\line\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+DECORATORS (WRAPS)\par
+Ajuta sa adaugam la fiecare functie alte functionalitati intr-un mod mai usor\par
+\cf1\f1\fs20\par
+\cf5 from \cf1 functools \cf5 import \cf1 wraps\line\cf5 import \cf1 time\line\line\cf5 def \cf10 timeit\cf1 (function):\line     \cf11 @wraps\cf1 (function)\line     \cf5 def \cf10 wrapper\cf1 (*args\cf5 , \cf1 **kwargs):\line         t1 = time.time()\line         result = function(*args\cf5 , \cf1 **kwargs)\line         t2 = time.time() - t1\line         \cf3 print\cf1 (t2)\line         \cf5 return \cf1 result\line     \cf5 return \cf1 wrapper\line\line\cf5 def \cf10 logger\cf1 (function):\line     \cf11 @wraps\cf1 (function)\line     \cf5 def \cf10 wrapper\cf1 (*args\cf5 , \cf1 **kwargs):\line         \cf5 if \cf1 args:\line             \cf3 print\cf1 (args)\line         \cf5 if \cf1 kwargs:\line             \cf3 print\cf1 (kwargs)\line         result = function(*args\cf5 , \cf1 **kwargs)\line         \cf5 return \cf1 result\line     \cf5 return \cf1 wrapper\line\line\cf11 @logger\line\cf5 def \cf10 add\cf1 (a\cf5 , \cf1 b):\line     \cf5 return \cf1 a + b\line\line\cf3 print\cf1 (add(\cf6 2\cf5 , \cf6 6\cf1 ))\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\par
+DECORATORS (EXTRA EX)\par
+\cf4\f1\fs20\line\cf5 from \cf1 functools \cf5 import \cf1 wraps\line\line\cf5 class \cf1 User():\line\line     \cf5 def \cf8 __init__\cf1 (\cf9 self\cf5 , \cf1 nume\cf5 , \cf1 email\cf5 , \cf1 parola\cf5 , \cf1 data_nastere):\line         \cf9 self\cf1 .nume = nume\line         \cf9 self\cf1 .email = email\line         \cf9 self\cf1 .parola = parola\line         \cf9 self\cf1 .data_nastere = data_nastere\line         \cf9 self\cf1 .__logat = \cf5 False\line\line     def \cf10 require_login\cf1 (\cf9 function\cf1 ):\line         \cf11 @wraps\cf1 (\cf9 function\cf1 )\line         \cf5 def \cf10 wrapper\cf1 (self\cf5 , \cf1 *args\cf5 , \cf1 **kwargs):\line             \cf5 if \cf1 self.__logat == \cf5 True\cf1 :\line                 result = \cf9 function\cf1 (self\cf5 , \cf1 *args\cf5 , \cf1 **kwargs)\line                 \cf5 return \cf1 result\line             \cf5 else\cf1 :\line                 \cf3 print\cf1 (\cf4 "You are not logged in "\cf1 )\line         \cf5 return \cf1 wrapper\line\line\line     \cf5 def \cf10 login\cf1 (\cf9 self\cf5 , \cf1 email\cf5 , \cf1 parola):\line         \cf5 if \cf9 self\cf1 .email == email \cf5 and \cf9 self\cf1 .parola == parola:\line             \cf9 self\cf1 .__logat = \cf5 True\line         else\cf1 :\line             \cf3 print\cf1 (\cf4 "Username or password is not correct"\cf1 )\line\line     \cf11 @require_login\line     \cf5 def \cf10 get_info\cf1 (\cf9 self\cf1 ):\line         \cf3 print\cf1 (\cf9 self\cf1 .nume\cf5 , \cf9 self\cf1 .email\cf5 , \cf9 self\cf1 .parola\cf5 , \cf9 self\cf1 .data_nastere)\line\line     \cf5 def \cf10 logout\cf1 (\cf9 self\cf1 ):\line         \cf9 self\cf1 .__logat = \cf5 False\line\line\line\cf1 user1 = User(\cf4 "Bogdan"\cf5 , \cf4 "BGD@yahoo.com"\cf5 , \cf4 "bgd94"\cf5 , \cf4 "03.03.03"\cf1 )\line user1.get_info()\line user1.login(\cf4 "BGD@yahoo.com"\cf5 , \cf4 "bgd94"\cf1 )\line user1.get_info()\line user1.logout()\line user1.get_info()\line user1.login(\cf4 "BGD@yahoo.com"\cf5 , \cf4 "bgd94"\cf1 )\line user1.get_info()\par
+\cf4\par
+\cf0\f0\fs22 -------------------------------------------------------------------------------------------------------------------\cf1\f1\fs20\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22\par
+}
+ 
